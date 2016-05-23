@@ -7,7 +7,7 @@ ___
 1. Function
 2. Usage
 3. Modification and Redistribution
-4. 
+
 ___
 
 ## 1. Function
@@ -20,4 +20,5 @@ In short, adblocker takes these steps to block advirtisement/malicious domains v
   5. merges the lists into a single file
   6. replaces the */etc/hosts* file with the new one
   7. deletes the tmp directory
+  
 This is all achived in 23 lines of commented and formatted code.
