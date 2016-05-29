@@ -43,7 +43,7 @@ The are various ways to automate the execution of this script:
 ##### Cron Job
 Use this command:
 
-  ```$ sudo cp /path/to/adblocker.sh /etc/cron.weekly```
+  ```$ sudo cp /path/to/adblocker.sh /etc/cron.weekly/adblocker.sh```
   
 Change the *.weekly* to a time of your choice - *.daily* | *.hourly* | *.weekly* | *.monthly*
 
