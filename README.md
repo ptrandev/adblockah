@@ -33,7 +33,7 @@ ___
   2. Move the **/adblocker/adblocker.sh** to a directory of your choice.
 
 #### Operation
-The are various ways to automate the execution of this script: 1) create a cron job | 2) create a bashrc alias
+The are various ways to automate the execution of this script:
 
 1) Creating a cron job will allow the script to automatically run ever hour/day/week/etc.
 
