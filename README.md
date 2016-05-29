@@ -22,7 +22,7 @@ In short, adblocker takes these steps to block unwanted domains via the /etc/hos
   6. replaces the **/etc/hosts** file with the new one
   7. deletes the tmp directory
   
-This is all achived in 23 lines of commented and formatted code.
+This is all achived in 27 lines of commented and formatted code.
 
 ___
 
