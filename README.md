@@ -13,13 +13,13 @@ ___
 ## 1. Function
 
 In short, adblocker takes these steps to block unwanted domains via the /etc/hosts file:
-  1. backs up the host file as hosts.bk *(/etc/hosts.bk)*
-  2. creates the */tmp/adblocker/* directory
-  3. change directory into */tmp/adblocker/*
-  4. wgets three filters *(easylist.txt and easyprivacy.txt malwaredomainslist.txt)*
-  5. replaces *127.0.0.1* with *0.0.0.0* *(malwaredomainslist.txt)*
+  1. backs up the host file as hosts.bk **(/etc/hosts.bk)**
+  2. creates the **/tmp/adblocker/** directory
+  3. change directory into **/tmp/adblocker/**
+  4. wgets three filters **(easylist.txt and easyprivacy.txt malwaredomainslist.txt)**
+  5. replaces **127.0.0.1** with **0.0.0.0** **(malwaredomainslist.txt)**
   5. merges filters into a single file
-  6. replaces the */etc/hosts* file with the new one
+  6. replaces the **/etc/hosts** file with the new one
   7. deletes the tmp directory
   
 This is all achived in 23 lines of commented and formatted code.
@@ -29,17 +29,21 @@ ___
 ## 2. Usage (for Linux)
 
 #### Obtaining
-  1. *[Download the zip]*(https://github.com/DonutDeflector/adblocker/archive/master.zip) or *clone the git repo*.
-  2. Move the */adblocker/adblocker.sh* to a directory of your choice.
+  1. [Download the zip](https://github.com/DonutDeflector/adblocker/archive/master.zip) or clone the git repo.
+  2. Move the **/adblocker/adblocker.sh** to a directory of your choice.
 
 #### Operation
 The are various ways to automate the execution of this script: 1) create a cron job | 2) create a bashrc alias
+
 1) Creating a cron job will allow the script to automatically run ever hour/day/week/etc.
+
 2) Creating a bashrc alias will allow you to maually execute the script more easily.
 
 ###### Cron Job
 Use this command:
+
   ```$ sudo cp /path/to/adblocker.sh /etc/cron.weekly```
+  
 Change the *.weekly* to a time of your choice: *.daily* | *.hourly* | *.weekly* | *.monthly*
 
 ###### Bashrc Alias
