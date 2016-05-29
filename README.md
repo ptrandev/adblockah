@@ -40,14 +40,14 @@ The are various ways to automate the execution of this script:
 
 2) Creating a bashrc alias will allow you to maually execute the script more easily.
 
-###### Cron Job
+##### Cron Job
 Use this command:
 
   ```$ sudo cp /path/to/adblocker.sh /etc/cron.weekly```
   
-Change the *.weekly* to a time of your choice: *.daily* | *.hourly* | *.weekly* | *.monthly*
+Change the *.weekly* to a time of your choice - *.daily* | *.hourly* | *.weekly* | *.monthly*
 
-###### Bashrc Alias
+##### Bashrc Alias
   1. Open the *.bashrc* alias in your home folder with your favorite text editor.
   2. Scroll to the bottom of the file and add an alias:
   ```alias adblocker-update='sudo sh /path/to/adblocker.sh'```
