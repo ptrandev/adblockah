@@ -2,8 +2,8 @@
 
 ############################
 
-# backup hosts file
-cp /etc/hosts /etc/hosts.bk
+# check if backup exists | if not, backup hosts file
+[ ! -e /etc/hosts.bk ] && cp /etc/hosts /etc/hosts.bk
 
 # create tmp directory + cd into directory
 mkdir /tmp/adblocker/
