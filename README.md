@@ -43,7 +43,7 @@ Use this command:
 
   ```$ sudo cp /path/to/adblocker.sh /etc/cron.weekly/adblocker.sh```
 
-Change the *.weekly* to a time of your choice - *.daily* | *.hourly* | *.weekly* | *.monthly*
+Change the **.weekly** to a time of your choice - **.daily** | **.hourly** | **.weekly** | **.monthly**
 
 ##### Bashrc Alias
   1. Open the *.bashrc* alias in your home folder with your favorite text editor.
