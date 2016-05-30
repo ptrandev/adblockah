@@ -19,7 +19,7 @@ In short, adblocker takes these steps to block unwanted domains via the /etc/hos
   4. wgets [StevenBlack's filter](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
   6. adds block filter for reddit tracking domains
   7. replaces the **/etc/hosts** file with the new one
-  8. deletes the /tmp/adblocker/ directory
+  8. deletes the **/tmp/adblocker/** directory
 
 This is all achieved in 34 lines of commented and formatted code.
 

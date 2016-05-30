@@ -23,8 +23,8 @@ cd /tmp/adblocker || fail "Couldn't access temp directory."
 wget https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
 # block reddit tracking
-echo "0.0.0.0  events.redditmedia.com" >> hosts
-echo "0.0.0.0  out.reddit.com" >> hosts
+echo "0.0.0.0 events.redditmedia.com" >> hosts
+echo "0.0.0.0 out.reddit.com" >> hosts
 
 # replace host file
 cp /tmp/adblocker/hosts /etc/hosts
