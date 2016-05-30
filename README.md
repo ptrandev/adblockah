@@ -6,7 +6,8 @@ ___
 ## Table of Contents -
 1. Function
 2. Usage
-3. Modification and Redistribution
+3. Filters
+4. Modification and Redistribution
 
 ___
 
@@ -52,7 +53,11 @@ Change the **.weekly** to a time of your choice - **.daily** | **.hourly** | **.
 
 ___
 
-## 3. Modification and Redistribution
+## 3. Filters
+
+Currently, adblocker only uses (SteveBlack's Adware and Malware List)[https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts]. More blacklists will be implemented as this project matures.
+
+## 4. Modification and Redistribution
 
 **From LISENSE.txt:**
 
