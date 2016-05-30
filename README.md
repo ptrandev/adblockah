@@ -57,6 +57,8 @@ ___
 
 Currently, adblocker only uses (SteveBlack's Adware and Malware List)[https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts]. More blacklists will be implemented as this project matures.
 
+___
+
 ## 4. Modification and Redistribution
 
 **From LISENSE.txt:**
