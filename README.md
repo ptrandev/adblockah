@@ -55,7 +55,7 @@ ___
 
 ## 3. Filters
 
-Currently, adblocker only uses (SteveBlack's Adware and Malware List)[https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts]. More blacklists will be implemented as this project matures.
+Currently, adblocker only uses [SteveBlack's Adware and Malware List](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts). More blacklists will be implemented as this project matures.
 
 ___
 
