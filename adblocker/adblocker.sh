@@ -1,33 +1,23 @@
 #!/bin/sh
+###
+# Script that modifies the /etc/hosts file to blacklist malicious and
+# advertising-related domains.
+###
 
-############################
-
-fail() {
-	echo "$1" >&2 # print error message to stderr
-	exit 1 # exit with non-success
-}
-
-# check if script is being run by root or with sudo / if not, fail
+# Check if script is being run by root or with sudo, if not, then fail
 if [ ! "$(id -u)" -eq 0 ]; then
-	fail "This must be run as root. Do 'sudo !!' to try again."
+	# Print error message
+	echo "This must be run as root. Do 'sudo !!' to try again." >&2
+	exit 1 # Exit with error status
 fi
 
-# check if backup exists | if not, backup hosts file
+# Make a backup if one doesn't already exist
 [ ! -e /etc/hosts.bk ] && cp /etc/hosts /etc/hosts.bk
 
-# create tmp directory + cd into directory if possible
-[ ! -e /tmp/adblocker ] && mkdir /tmp/adblocker
-cd /tmp/adblocker || fail "Couldn't access temp directory."
+# Download the new hosts file, overwriting the original
+wget -nv -O /etc/hosts -- \
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
-# wget filters
-wget https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-
-# block reddit tracking
-echo "0.0.0.0 events.redditmedia.com" >> hosts
-echo "0.0.0.0 out.reddit.com" >> hosts
-
-# replace host file
-cp /tmp/adblocker/hosts /etc/hosts
-
-# cleanup
-rm -r /tmp/adblocker
+# Append reddit's tracking addresses
+echo "0.0.0.0 events.redditmedia.com" >> /etc/hosts
+echo "0.0.0.0 out.reddit.com" >> /etc/hosts

@@ -1,9 +1,9 @@
 # adblocker
-A shell script that uses /etc/hosts to block advertising/malicious/tracking domains
+A collection of scripts that use /etc/hosts to block advertising-related and malicious domains.
 
 ___
 
-## Table of Contents -
+## Table of Contents
 1. Function
 2. Usage
 3. Filters
@@ -14,23 +14,19 @@ ___
 ## 1. Function
 
 In short, adblocker takes these steps to block unwanted domains via the /etc/hosts file:
-  1. backs up the host file as hosts.bk **(/etc/hosts.bk)**
-  2. creates the **/tmp/adblocker/** directory
-  3. change directory into **/tmp/adblocker/**
-  4. wgets [StevenBlack's filter](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
-  6. adds block filter for reddit tracking domains
-  7. replaces the **/etc/hosts** file with the new one
-  8. deletes the **/tmp/adblocker/** directory
+  1. backs up the **/etc/hosts** file as **/etc/hosts.bk**
+  2. `wget`s [StevenBlack's filter](https://github.com/StevenBlack/hosts)
+  3. adds additional filters for reddit's tracking domains
 
-This is all achieved in 34 lines of commented and formatted code.
+This is all achieved in 23 lines of commented and formatted code.
 
 ___
 
 ## 2. Usage (for Linux)
 
 #### Obtaining
-  1. [Download the zip](https://github.com/DonutDeflector/adblocker/archive/master.zip) or clone the git repo.
-  2. Move the **/adblocker/adblocker.sh** to a directory of your choice.
+  1. [Download the zip](https://github.com/DonutDeflector/adblocker/archive/master.zip) or clone the git repo with `git clone https://github.com/DonutDeflector/adblocker.git`.
+  2. Move **/adblocker/adblocker.sh** to a directory of your choice.
 
 #### Operation
 The are various ways to automate the execution of this script:
@@ -55,13 +51,13 @@ ___
 
 ## 3. Filters
 
-Currently, adblocker only uses [SteveBlack's Adware and Malware List](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts). More blacklists will be implemented as this project matures.
+Currently, adblocker only uses [StevenBlack's Adware and Malware List](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts). More blacklists will be implemented as this project matures.
 
 ___
 
 ## 4. Modification and Redistribution
 
-**From LISENSE.txt:**
+**From LICENSE.txt:**
 
 ```
 
