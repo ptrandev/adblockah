@@ -40,12 +40,13 @@ Use this command:
 
   ```$ sudo cp /path/to/adblocker.sh /etc/cron.weekly/adblocker.sh```
 
-Change the **.weekly** to a time of your choice - **.daily** | **.hourly** | **.weekly** | **.monthly**
+Change the **.weekly** to a time of your choice — **.daily** | **.hourly** | **.weekly** | **.monthly**
 
 ##### Bashrc Alias
   1. Open the *.bashrc* alias in your home folder with your favorite text editor.
-  2. Scroll to the bottom of the file and add an alias:
-  ```alias adblocker-update='sudo sh /path/to/adblocker.sh'```
+  2. Scroll to the bottom of the file and add an alias: `alias adblocker-update='sudo sh /path/to/adblocker.sh'`
+  3. Open the terminal and type `adblocker-update`. Enter your root password. This will now update the **/etc/hosts** file. 
+  
 
 ___
 
