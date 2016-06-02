@@ -15,7 +15,7 @@ ___
 
 In short, adblocker takes these steps to block unwanted domains via the /etc/hosts file:
   1. backs up the **/etc/hosts** file as **/etc/hosts.bk**
-  2. `wget`s [StevenBlack's filter](https://github.com/StevenBlack/hosts)
+  2. `wget`s [StevenBlack's Unified Hosts Filter](https://github.com/StevenBlack/hosts)
   3. adds additional filters for reddit's tracking domains
 
 This is all achieved in 23 lines of commented and formatted code.
