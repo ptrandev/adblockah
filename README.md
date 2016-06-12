@@ -1,5 +1,5 @@
 # adblocker
-A collection of scripts that use /etc/hosts to block advertising-related and malicious domains.
+A collection of scripts that use /etc/hosts to block advertising-related, tracking, malicious domains.
 
 ___
 
