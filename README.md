@@ -1,4 +1,4 @@
-# adblocker [abandoned]
+# adblocker
 A collection of scripts that use /etc/hosts to block advertising-related, tracking, and malicious domains.
 
 ___
