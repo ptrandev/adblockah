@@ -1,4 +1,4 @@
-# adblocker
+# adblockah
 A collection of scripts that use /etc/hosts to block advertising-related, tracking, and malicious domains.
 
 ___
@@ -25,7 +25,7 @@ ___
 ## 2. Usage (for Linux)
 
 #### Obtaining
-  1. [Download the zip](https://github.com/DonutDeflector/adblocker/archive/master.zip) or clone the git repo with `git clone https://github.com/DonutDeflector/adblocker.git`.
+  1. [Download the zip](https://github.com/DonutDeflector/adblockah/archive/master.zip) or clone the git repo with `git clone https://github.com/DonutDeflector/adblockah.git`.
   2. Move **/adblocker/adblocker.sh** to a directory of your choice.
 
 #### Operation
@@ -38,21 +38,21 @@ There are various ways to automate the execution of this script:
 ##### Cron Job
 Use this command:
 
-  ```$ sudo cp /path/to/adblocker.sh /etc/cron.weekly/adblocker.sh```
+  ```$ sudo cp /path/to/adblocker.sh /etc/cron.weekly/adblockah.sh```
 
 Change the **.weekly** to a time of your choice — **.daily** | **.hourly** | **.weekly** | **.monthly**
 
 ##### Bashrc Alias
   1. Open the *.bashrc* alias in your home folder with your favorite text editor.
-  2. Scroll to the bottom of the file and add an alias: `alias adblocker-update='sudo sh /path/to/adblocker.sh'`
-  3. Open the terminal and type `adblocker-update`. Enter your root password. This will now update the **/etc/hosts** file. 
+  2. Scroll to the bottom of the file and add an alias: `alias adblockah-update='sudo sh /path/to/adblockah.sh'`
+  3. Open the terminal and type `adblockah-update`. Enter your root password. This will now update the **/etc/hosts** file. 
   
 
 ___
 
 ## 3. Filters
 
-Currently, adblocker only uses [StevenBlack's Adware and Malware List](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts). More blacklists will be implemented as this project matures.
+Currently, adblockah only uses [StevenBlack's Adware and Malware List](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts). More blacklists will be implemented as this project matures.
 
 ___
 
