@@ -26,7 +26,7 @@ ___
 
 #### Obtaining
   1. [Download the zip](https://github.com/DonutDeflector/adblockah/archive/master.zip) or clone the git repo with `git clone https://github.com/DonutDeflector/adblockah.git`.
-  2. Move **/adblocker/adblocker.sh** to a directory of your choice.
+  2. Move **/adblockah/adblockah.sh** to a directory of your choice.
 
 #### Operation
 There are various ways to automate the execution of this script:
